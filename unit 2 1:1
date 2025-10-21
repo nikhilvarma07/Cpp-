@@ -1,0 +1,31 @@
+#include <iostream>
+ #include <cstdlib>
+ using namespacestd;
+ Int b = 20;
+ namespace N1
+ {
+ }
+ int a = 40;
+ namespace N2
+ {
+ int a = 2;
+ }
+ void fun()
+ {
+ int a = 2;
+ cout << "FunA: " << a << " " << ::b << endl;
+ }
+ int main()
+ {
+ system(“color F0”);
+ cout << "Roll No: 24B11AI023" << endl;
+ {
+ }
+ int a = 2;
+ cout << "InnerA: " << a << endl;
+ cout << "Outer B : " << b << endl;
+ fun();
+ cout << "Name space 1 : " << N1::a << endl;
+ cout << "Name space 2 : " << N2::a << endl;
+ return 0;
+ }
