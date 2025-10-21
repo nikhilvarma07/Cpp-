@@ -1,0 +1,31 @@
+#include<iostream> 
+using namespace std; 
+template<typename T> 
+T mymax(T x, T y) { 
+return (x > y) ? x : y; 
+} 
+template<typename T> 
+void swapValues(T &a,T&b) { 
+T temp = a; 
+a = b; 
+b = temp; 
+} 
+int main() { 
+cout<<"Rollno:24B11AI023"<<endl; 
+cout << "Max of 4 and 8: " << mymax<int>(4, 8) << endl; 
+cout << "Max of 4.0 and 8.0: " << mymax<double>(4.0, 8.0) << endl; 
+cout << "Max of 'g' and 'e': " << mymax<char>('g', 'e') << endl; 
+int a = 30, b = 40;
+cout << "\nBefore swap : a = " << a << ", b = " << b << endl; 
+swapValues(a, b); 
+cout << "After swap : a = " << a << ", b = " << b << endl; 
+double c = 11.0, d = 21.0; 
+cout << "\nBefore swap : c = " << c << ", d = " << d << endl; 
+swapValues(c, d); 
+cout << "After swap : c = " << c << ", d = " << d << endl; 
+char e = 'A', f = 'B'; 
+cout << "\nBefore swap : e = " << e << ", f = " << f << endl; 
+swapValues(e, f); 
+cout << "After swap : e = " << e << ", f = " << f << endl; 
+return 0; 
+} 
